@@ -14,7 +14,7 @@
     font-size: 30px;
 }
 
-.operatorButtonsArea {
+#operatorButtonsArea {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -27,7 +27,7 @@
     width: 40px;
 }
 
-.numberButtonsArea {
+#numberButtonsArea {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
