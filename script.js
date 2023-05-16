@@ -34,11 +34,8 @@ function operate (operator, num1, num2) {
 }
 
 let calculatorDisplay = document.getElementById('displayHeading');
-let numberSelection = document.getElementsByClassName('numberButtons');
+let numberButton = document.getElementsByClassName('numberButtons');
 let operatorButton = document.getElementsByClassName("operatorButtons"); 
-
-// clear display
-
 
 // add event listener to each operator button
 for (let i = 0; i < operatorButton.length; i++) {
@@ -49,5 +46,13 @@ for (let i = 0; i < operatorButton.length; i++) {
             if (symbol === 'Clear') {
                 calculatorDisplay.innerHTML = '';
             }
+    });
+}
+
+// add event listener to each operator button
+for (let i = 0; i < numberButton.length; i ++) {
+    numberButton[i].addEventListener('click', function(){
+        const number = numberButton[i].textContent;
+        console.log('Number Clicked:', number);
     });
 }
