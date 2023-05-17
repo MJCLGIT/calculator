@@ -19,7 +19,7 @@ function divide (num1, num2) {
 }
 
 function operate (operator, num1, num2) {
-    if (opertor === "+"){
+    if (operator === "+"){
         return add(num1, num2);
     }
     else if (operator === "-"){
@@ -64,3 +64,4 @@ for (let i = 0; i < numberButton.length; i ++) {
         globalNumber = number;
     });
 }
+
