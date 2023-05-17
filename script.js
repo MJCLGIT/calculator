@@ -51,6 +51,7 @@ for (let i = 0; i < operatorButton.length; i++) {
                 calculatorDisplay.innerHTML = '0';
             }
             else {
+                calculatorDisplay.innerHTML = operatorButton[i].textContent;
                 globalOperator = symbol;
             }
     });
@@ -60,8 +61,8 @@ for (let i = 0; i < operatorButton.length; i++) {
 for (let i = 0; i < numberButton.length; i ++) {
     numberButton[i].addEventListener('click', function(){
         const number = numberButton[i].textContent;
+        calculatorDisplay.innerHTML = numberButton[i].textContent;
         // console.log('Number Clicked:', number);
         globalNumber = number;
     });
 }
-
